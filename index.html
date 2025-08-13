@@ -61,7 +61,7 @@
     #topbar{
       position: fixed; top: 0; left: 0; right: 0;
       min-height: var(--topbar-height);
-      padding: var(--topbar-pad-y) 20px;
+      padding: var(--topbar-pad-y) 15px;
       background: var(--topbar-bg);
       display: flex; align-items: center; justify-content: space-between;
       border-bottom: 1px solid var(--topbar-border);
@@ -75,9 +75,9 @@
     }
 
     /* Área de vistas */
-    #app{ padding-top: var(--topbar-height,20px); }
-    #app header{ height: 500px !important; margin-top: calc(1 * var(--topbar-pad-y, 100px)) !important; padding-top: 0 !important; }
-    #app .hero-text{ top: 137px; }
+    #app{ padding-top: var(--topbar-height,-30px); }
+    #app header{ height: 500px !important; margin-top: calc(0 * var(--topbar-pad-y, 15px)) !important; padding-top: 0!important; }
+    #app .hero-text{ top: 120px; }
   </style>
 </head>
 <script>
