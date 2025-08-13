@@ -4,19 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios - Rapid Flex</title>
-  <!-- Hoja de estilos original de servicios -->
-  <!--<link rel="stylesheet" href="estilos-servicios.css">-->
-  <!-- Ícono de la página -->
   <link href="mobile-tablet-servicio.css" rel="stylesheet" />
   <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
 
-  <!-- Título principal de la sección de servicios. Se rellenará desde el Excel -->
   <h2 class="titulo-servicio" id="servicio_titulo"></h2>
   <section class="servicios">
-
-    <!-- Primera tarjeta de servicio -->
     <div class="tarjeta">
       <h3 id="tarjeta1_titulo"></h3>
       <p class="centrado"><span class="icono-servicio icono-box"></span><span id="tarjeta1_item1"></span></p>
@@ -27,7 +21,6 @@
       <p class="centrado"><span class="icono-servicio icono-reloj"></span><span id="tarjeta1_item6"></span></p>
     </div>
 
-    <!-- Segunda tarjeta de servicio -->
     <div class="tarjeta">
       <h3 id="tarjeta2_titulo"></h3>
       <p class="centrado"><span class="icono-servicio icono-fuego"></span><span id="tarjeta2_item1"></span></p>
@@ -37,21 +30,19 @@
       <p class="centrado"><span class="icono-servicio icono-zona"></span><span id="tarjeta2_item5"></span></p>
     </div>
 
-    <!-- Tercera tarjeta de servicio -->
     <div class="tarjeta">
       <h3 id="tarjeta3_titulo"></h3>
       <p class="centrado"><span class="icono-servicio icono-tienda"></span><span id="tarjeta3_item1"></span></p>
       <p class="centrado"><span class="icono-servicio icono-ventas"></span><span id="tarjeta3_item2"></span></p>
       <p class="centrado"><span></span><span id="tarjeta3_item3"></span></p>
     </div>
-
   </section>
 
-  <!-- Barra decorativa que separa secciones
-  <div class="barra-decorativa"></div>-->
+  <!-- Iframe oculto para evitar navegación aun si falla JS -->
+  <iframe name="hidden_iframe" style="display:none;width:0;height:0;border:0;"></iframe>
 
-  <!-- Sección “Quiero Empezar” con formulario -->
-  <section class="empezar-seccion">
+   <!-- Sección “Quiero Empezar” con formulario -->
+   <section class="empezar-seccion">
     <div class="empezar-contenedor">
       <div class="empezar-texto">
         <!-- Título de la sección "Quiero Empezar" gestionado desde el Excel -->
@@ -73,13 +64,13 @@
       </div>
     </div>
   </section>
-
-  <!-- Scripts: primero el script que maneja el formulario existente -->
-  <script src="guardar-despachar.js"></script>
-  <!-- Librería SheetJS para leer el Excel -->
+  
+ 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-  <!-- Script que procesa el Excel específico para esta página -->
   <script src="clienteServicio.js"></script>
+  
+  
+  
 
 </body>
 </html>
