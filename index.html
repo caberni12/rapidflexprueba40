@@ -80,6 +80,24 @@
     #app .hero-text{ top: 137px; }
   </style>
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const anchoPantalla = window.innerWidth;
+
+    if (anchoPantalla > 1024) {
+      // Si es mayor a 1024 píxeles, ir a #/menu
+      if (!window.location.href.includes("#/menu")) {
+        window.location.href = "https://caberni12.github.io/rapidflexprueba40/#/menu";
+      }
+    } else {
+      // Si es igual o menor a 1024 píxeles, ir a #/servicio
+      if (!window.location.href.includes("#/servicio")) {
+        window.location.href = "https://caberni12.github.io/rapidflexprueba40/#/servicio";
+      }
+    }
+  });
+</script>
+
 <body>
   <!-- Topbar global y fijo -->
   <header id="site-header">
