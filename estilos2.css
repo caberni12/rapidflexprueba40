@@ -175,9 +175,9 @@
 }
 
 .servicios{
-  margin-left: auto !important; margin-right: 0 !important; /* opción 1 */
+  margin-left: -150px !important; margin-right: 0 !important; /* opción 1 */
   display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 310px)); /* opción 2 */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 305px)); /* opción 2 */
   gap:0;
   justify-content:end;
 }
