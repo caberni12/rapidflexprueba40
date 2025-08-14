@@ -141,24 +141,7 @@
       color: white;
     }
 
-    /* === Tarjetas del menú totalmente pegadas === */
-/* Bloque de tarjetas (separado del contenido superior) */
-/* ==== MENÚ / TARJETAS SIN ESPACIO ENTRE SÍ (vertical y horizontal) ==== */
-.servicios{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-  gap: 100px !important;           /* usa px/rem si quisieras espacio: ej. 4px */
-  row-gap: 0 !important;
-  column-gap: 0 !important;
-
-  padding: 0 !important;       /* sin acolchado del contenedor */
-  margin: clamp(24px, 4vw, 10px) auto 0;  /* solo separo de lo de arriba */
-  max-width: 1200px;
-  background: #fff;
-  
-  
-}
-
+    
 
 /* Tarjetas: cero márgenes/padding/bordes/sombras, fondo gris */
 .servicios > *,
@@ -175,12 +158,16 @@
 }
 
 .servicios{
-  margin-left: -150px !important; margin-right: 0 !important; /* opción 1 */
-  display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 305px)); /* opción 2 */
-  gap:0;
-  justify-content:end;
+  
+  margin: 35px auto 0; /* <-- centra el contenedor: márgenes iguales */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px)); /* tarjetas de 300px */
+  gap: 0;
+  justify-content: center; /* <-- centra las columnas dentro del ancho disponible */
+  margin: -120px;
+  margin-top: 20px;
 }
+
 
 
 /* Compacta el contenido interno de cada tarjeta */
@@ -212,8 +199,8 @@
     .servicio img {
       width: 130px;
       height: 130px;
-      margin-bottom: -40px;
-      margin-top: -20px;
+      margin-bottom: -30px;
+      margin-top: -25px;
       margin-left: -5px;
     }
     
@@ -417,6 +404,7 @@
   margin-left: 100px;
   margin-top: 10px;
   margin-right:100px ;
+ 
 }
 
 
@@ -429,7 +417,7 @@
 
 
 .contenido-telefono h2 {
-  font-size: 2rem;
+  font-size: 2.0rem;
   font-weight: 700;
   color: #0072ff; /* Títulos en azul */
   margin-bottom: 20px;
@@ -460,7 +448,7 @@
   max-width: 500px;
   flex: 1 1 480px;
   margin-left: 60px;
-  transform: translateX(600px) translateY(-50px);
+  transform: translateX(640px) translateY(-30px);
 }
 
 
@@ -492,19 +480,19 @@
   margin: 0;
   font-size: 1rem;
   color: #333;
-  line-height: 1.5;
+  line-height: 1.7;
   font-weight: 700; /* Texto en negritas */
 }
 
 
 
 .imagen-telefono img {
-  width: 94% !important;
+  width: 100% !important;
   max-width: none !important;
-  height: 340px; 
+  height: 350; 
   object-fit: contain;
   margin-left: 400px;
-  transform: translateX(180px) translateY(-930px);
+  transform: translateX(120px) translateY(-930px);
   display: block !important;
   justify-content: center;
   align-items: center;
@@ -512,17 +500,18 @@
   margin: 0 auto !important;
 }
 .imagen-ubicacion img {
-  width: 61% !important;
+  width: 77% !important;
   max-width: none !important;
-  height: auto;
+  height: 600px;
   object-fit: contain;
-  margin-left: 160px;
-  transform: translateX(20px) translateY(-1350px);
+  margin-left: 140px;
+  transform: translateX(-20px) translateY(-1490px);
   display: block !important;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   flex: 1 1 auto;
   margin: 0 auto !important;
+  
   
 }
 
@@ -623,7 +612,8 @@
 .seccion-marketplaces2{
   padding: 20px 5%;
   background-color: #0570f3; /* azul */
-  transform:translateY(-1300px);
+  transform:translateY(-1410px);
+  margin: -115px
 }
 
 /* h2 y p en la misma línea */
